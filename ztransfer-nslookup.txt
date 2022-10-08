@@ -1,0 +1,7 @@
+# to perform zone transfer using nslookup command, perform the following steps.
+
+1.) nslookup -type=ns target_domain
+2.) nslookup
+2a) server nameserver_here
+2b) set type=any
+2c) ls -d target_domain
