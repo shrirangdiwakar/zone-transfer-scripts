@@ -1,7 +1,16 @@
 # to perform zone transfer using nslookup command, perform the following steps.
 
 1.) nslookup -type=ns target_domain
+> This command will output Name servers of the target domain.
+
 2.) nslookup
+> With this, you enter in the nslookup command prompt.
+
 2a) server nameserver_here
+> This will set the nameserver to the specified NS.
+
 2b) set type=any
+> Here, we set type=any to retrieve all
+
 2c) ls -d target_domain
+> This command attempts to perform a zone transfer on the target domain.
